@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% block title %}<title>DNS Control Panel - DOMAIN</title>{% endblock %}
+{% block title %}<title>{{ domain.name }} - DNS Control Panel</title>{% endblock %}
 
 {% block dashboard_stat %}
 <section class="content-header">
     <h1>
-        Manage domain <small>{{ domain.name }}</small>
+        Manage domain: <b>{{ domain.name }}</b>
     </h1>
     <ol class="breadcrumb">
         <li><a href="{{ url_for('dashboard') }}"><i
